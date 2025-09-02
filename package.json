@@ -1,15 +1,21 @@
 {
-  "name": "dsa_gen_ai",
+  "name": "dsa-chatbot",
   "version": "1.0.0",
-  "main": "DSA.js",
+  "description": "AI-powered Data Structures and Algorithms chatbot with Gemini API",
+  "main": "api/chat.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "engines": {
+    "node": ">=18.0.0"
   },
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Build completed'",
+    "start": "vercel dev"
+  },
+  "keywords": ["dsa", "chatbot", "ai", "gemini", "data-structures", "algorithms"],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "@google/genai": "^1.13.0"
+    "@google/generative-ai": "^0.24.1"
   }
 }
